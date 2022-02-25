@@ -26,3 +26,152 @@ section{
   min-height: var(--section-min-height);
   height: var(--section-min-height);
 }
+.navbar{
+  height: var(--navbar-height);
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  align-items: center;
+  padding: var(--padding);
+}
+
+.logo{
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--color);
+}
+
+.menu-holder{
+  height: 100%;
+}
+
+.menu{
+  display: flex;
+  align-items: center;
+  height: 100%;
+  /* padding: 20px 20; */
+}
+
+.menu .menu-item{
+  list-style: none;
+ display: flex;
+  align-items: center;
+  height: 100%;
+  margin: 0 10px;
+}
+
+.menu .menu-item a{
+  padding: 20px 25px;
+  text-decoration: none;
+  color: var(--color);
+  font-size: 18px;
+}
+
+.container{
+  padding: var(--padding);
+}
+
+.home{
+  padding-top: calc(var(--navbar-height) + 10px);
+  /* background-color: red; */
+}
+
+.home-container{
+  display: flex;
+  flex: 1 1;
+  /* background-color: green; */
+  height: 100%;
+}
+
+.home-details{
+  /* background-color: red; */
+  flex: 0.5 1;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.home-details .name{
+  font-size: 52px;
+  font-weight: bold;
+  color: var(--color);
+}
+
+.home-details .name-details{
+  margin: 20px 0 0 0;
+}
+.name-details p{
+  font-size: 22px;
+}
+
+.home-image{
+  flex: 0.5 1;
+  overflow: hidden;
+
+}
+
+.home-image img{
+/* background-color: red; */
+}
+
+.projects{
+padding-top: 20px;
+}
+
+.projects-header{
+font-size: 36px;
+text-align: center;
+}
+
+.projects-tag-line{
+font-size: 14px;
+color: #ccc;
+text-align: center;
+margin-top: 20px;
+}
+
+.projects-holder{
+display: flex;
+margin-top: 20px;
+column-gap: 20px;
+width: 100%;
+overflow-x:auto;
+padding-bottom: 20px;
+}
+
+.project{
+width: 300px;
+min-width: 300px;
+height: 400px;
+overflow: hidden;
+position: relative;
+border-radius: var(--border-radius);
+}
+
+.project-img{
+width: 100%;
+}
+
+.project-img img{
+width: 100%;
+}
+
+.project-description{
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+height: 0;
+background-color: rgba(0, 0, 0, 0.9);
+padding: 20px;
+overflow-y: auto;
+display: none;
+/* animation: float-up 0.5s ease-in-out; */
+/* transform: all 0.5s ease-in-out; */
+}
