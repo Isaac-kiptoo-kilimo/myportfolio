@@ -542,3 +542,41 @@
   cursor: pointer;
 }
 
+.social-media{
+  /* background-color: white; */
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  flex-direction: column;
+}
+
+.social-media-icons{
+  display: flex;
+  flex-direction: column;
+}
+
+.social-media-icons a {
+  /* font-size: 30px; */
+  color: var(--color);
+  margin-bottom: 4px;
+  margin-right: 20px;
+  text-decoration: none;
+  padding: 10px 25px;
+  display: flex;
+  align-items: center;
+}
+
+.social-media-icons a:hover{
+  color: var(--primary-color);
+}
+
+.social-media-icons a i{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #aaaaaa20;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
