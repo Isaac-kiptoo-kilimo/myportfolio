@@ -281,3 +281,264 @@
   padding-bottom: 40px;
 }
 
+.why-programming{
+  border-left: 10px solid var(--primary-color);
+  padding: 40px;
+  margin: 20px 0;
+}
+
+.job-experience-title, .title{
+  font-size: 32px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.job-experience-title::after, .title::after{
+  content: '';
+  width: 100px;
+  height: 10px;
+  background-color: var(--primary-color);
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+}
+
+.jobs, .education, .hobbies-inner{
+  display: flex;
+  flex: 1 1;
+  margin-bottom: 30px;
+  /* column-gap: 20px; */
+  row-gap: 40px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.job, .education-details, .hobbies-list, .interests{
+  /* flex: 0.5 1; */
+  width: 48%;
+  min-width: 48%;
+  padding-right: 40px;
+}
+
+.company-title{
+  display: flex;
+}
+
+.company{
+  font-size: 22px;
+  font-weight: bold;
+  color: var(--color);
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.company::after{
+  content: '';
+  width: 100px;
+  height: 4px;
+  background-color: var(--primary-color);
+  position: absolute;
+  bottom: -10px;
+  right: 0;
+  margin-left: 100px;
+}
+
+.period{
+  font-size: 16px;
+  color: var(--color);
+  margin-bottom: 20px;
+}
+
+.job-description{
+  font-size: 16px;
+  color: var(--color);
+  margin-bottom: 20px;
+  line-height: 1.5rem;
+}
+
+.education-details{
+  border-radius: var(--border-radius);
+  background-color: #aaaaaa20;
+  padding: 20px;
+  cursor: pointer;
+  transition: all 0.5s linear;
+}
+
+.education-details:hover{
+  animation: move-up 0.5s linear;
+  transform: translateY(-20px);
+  /* box-shadow: 0 10px 20px 0 #ffc6c620; */
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+
+@keyframes move-up{
+  0%{
+    transform: translateY(0);
+  }
+  100%{
+    transform: translateY(-20px);
+  }
+}
+
+
+.undertake h5{
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.undertake p{
+  font-size: 16px;
+  color: var(--color);
+  line-height: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.achievement h5{
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+  text-transform: uppercase;
+}
+
+.hobbies{
+  margin-top: 60px;
+  /* padding-top: 30px; */
+}
+
+.hobbies-description{
+  font-size: 16px;
+  color: var(--color);
+  line-height: 1.5rem;
+  margin-bottom: 20px;
+  /* text-align: center; */
+}
+
+.hobbies-list h4, .interests h4{
+  position: relative;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+.hobbies-list h4::after, .interests h4::after{
+   content: '';
+  width: 100px;
+  height: 4px;
+  background-color: var(--primary-color);
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+}
+.hobbies-list ul, .interests ol{
+  padding: 0 20px;
+}
+.hobbies-list ul li, .interests ol li{
+  margin-bottom: 10px;
+}
+
+.skills{
+  padding: 20px 0;
+}
+
+.skill-name{
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.skill-progress{
+  height: 10px;
+  /* border-radius: var(--border-radius); */
+  border-radius: 4px;
+  background-color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.languages{
+  display: flex;
+  /* justify-content: ; */
+  flex-wrap: wrap;
+}
+
+.language{
+  font-size: 16px;
+  margin-bottom: 10px;
+  width: 20%;
+  min-width: 20%;
+}
+
+.contact{
+  margin-top: 60px;
+  margin-bottom: 120px;
+}
+
+.contact h2{
+  font-size: 36px;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.contact-description{
+  font-size: 16px;
+  color: var(--color);
+  line-height: 1.5rem;
+  margin-bottom: 30px;
+  text-align: center;
+  /* padding: 0 100px; */
+}
+
+.contact-container{
+  display: flex;
+  flex: 1 1;
+}
+
+.w-48{
+  width: 48%;
+  padding-right: 40px;
+}
+
+.contact-form h4, .social-media h4{
+  font-size: 22px;
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.form{
+  padding-right: 20px;
+}
+
+.input-holder{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.input-holder label{
+  font-size: 16px;
+  color: var(--color);
+  margin-bottom: 10px;
+}
+
+.input-holder input, .input-holder textarea{
+  font-size: 16px;
+  color: var(--color);
+  border: 0;
+  background-color: #aaaaaa20;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+  outline: none;
+  max-width: 100%;
+}
+
+.send-msg-btn{
+  font-size: 16px;
+  color: var(--color);
+  border: 0;
+  /* background-color: #aaaaaa20; */
+  background-color: var(--primary-color);
+  padding: 10px;
+  margin-bottom: 10px;
+  outline: none;
+  cursor: pointer;
+}
+
