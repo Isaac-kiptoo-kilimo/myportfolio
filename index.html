@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Isaac Kiptoo | Portfolio Landing Page</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+
 </head>
 
 <body>
@@ -14,7 +16,14 @@
     <div class="logo">
       <img src="./images/logo.png" alt="">
     </div>
-    <div class="menu-holder">
+
+    <div class="humburger" onclick="openCloseMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+
+    <div class="menu-holder close" id="menu-holder" onclick="openCloseMenu()">
       <ul class="menu">
         <li class="menu-item">
           <a href="#home" class="nav-link">Home</a>
@@ -29,10 +38,13 @@
           <a href="#contact" class="nav-link">Contact Me</a>
         </li>
         <li class="menu-item">
-          <a href="http://127.0.0.1:5500/cv.html" class="nav-link download-resume">Download Resume</a>
+          <a href="/resume.pdf" download="Dalmas Ogembo Resume.pdf" class="nav-link download-resume">
+            Download Resume
+          </a>
         </li>
       </ul>
     </div>
+
   </nav>
 
   <section id="home" class="section home">
@@ -46,7 +58,7 @@
         </div>
       </div>
       <div class="home-image">
-        <img src="images/isaac-.png" alt="">
+        <img src="images/isaac-.png" loading="lazy" alt="">
       </div>
     </div>
   </section>
@@ -55,80 +67,83 @@
     <div class="container projects-container">
       <h2 class="projects-header">My Projects</h2>
       <p class="projects-tag-line">
-        The projects listed below are among my few that I have worked on and published, and they can be used with a well-documented README and an MIT license.
+        The projects listed below are among my few that I have worked on and published, and they can be used with a
+        well-documented README and an MIT license.
       </p>
 
       <div class="projects-holder">
         <div class="project">
           <div class="project-img">
-            <img src="images/project1-image.png" width="250px" alt="HTML project one">
+            <img src="images/project1-image.png" loading="lazy" width="250px" alt="HTML project one">
           </div>
           <div class="project-description">
             <div class="proj-inner">
               <h3>Burger Place Website</h3>
               <p>
-                This is a burgar website with six sections: a header, an order button, a delivery section, our menu section, an explosion section, a contact us page, and a footer.
+                This is a burgar website with six sections: a header, an order button, a delivery section, our menu
+                section, an explosion section, a contact us page, and a footer.
               </p>
               <div>
                 <a href="https://isaac-kiptoo-kilimo.github.io/Moringa-Indepent-Project/">Burger place website</a>
               </div>
             </div>
           </div>
-          <div class="scroll-here"></div>
         </div>
         <div class="project">
           <div class="project-img">
-            <img src="images/quiz-questions.png" width="250px" alt="HTML project one">Loading...</img>
+            <img src="images/quiz-questions.png" loading="lazy" width="250px" alt="HTML project one">
           </div>
 
           <div class="project-description">
             <h3>Quiz Board Website project</h3>
             <p>
-              This is a quiz board website with six sections: a header, an information section, a block questions display section, a list questions display section, a results section, and a footer.
+              This is a quiz board website with six sections: a header, an information section, a block questions
+              display section, a list questions display section, a results section, and a footer.
             </p>
             <a href="https://isaac-kiptoo-kilimo.github.io/Moringa-independent-project-week3/">Quiz Board Website</a>
           </div>
         </div>
         <div class="project">
           <div class="project-img">
-            <img src="images/street-Food-Website.png" width="250px" alt="HTML project one">
+            <img src="images/street-Food-Website.png" loading="lazy" width="250px" alt="HTML project one">
           </div>
           <div class="project-description">
             <h3>street Food Website project</h3>
             <p>
-              This is a street-food website with six sections: a header, an order button, a delivery section, our menu section, an explosion section, a contact us page, and a footer.
+              This is a street-food website with six sections: a header, an order button, a delivery section, our menu
+              section, an explosion section, a contact us page, and a footer.
             </p>
             <a href="https://isaac-kiptoo-kilimo.github.io/street-Food-Website/">street Food Website</a>
           </div>
-          <div class="scroll-here"></div>
         </div>
         <div class="project">
           <div class="project-img">
-            <img src="images/insuarance.png" width="250px" alt="HTML project one">
+            <img src="images/insuarance.png" loading="lazy" width="250px" alt="HTML project one">
           </div>
           <div class="project-description">
             <h3>Insuarance Website project</h3>
             <p>
-              This is an insurance website with six sections: the header with navigation bar, the services offered, the location of the branches, the appointment booking lace, the contact us page, and the footer.
+              This is an insurance website with six sections: the header with navigation bar, the services offered, the
+              location of the branches, the appointment booking lace, the contact us page, and the footer.
             </p>
             <a href="https://isaac-kiptoo-kilimo.github.io/Moringa-Independent-Project-2week/">Insuarance Website</a>
           </div>
-          <div class="scroll-here"></div>
         </div>
       </div>
 
     </div>
   </section>
   <!-- job experience section -->
-  <section id="about" class="about">
+  <section id="about" class="container about">
     <div class="about-container">
       <h2>Who Am I?</h2>
       <div class="about-details">
 
         <div class="why-programming">
-          <h3>Why programming?</h3>
-          <p>
-            I'm studying programming because it offers opportunities for growth and flexibility, and I'd like to pursue a challenging career in the industry. The ability to code opens up new avenues for problem-solving.
+          <h3 class="title">Why programming?</h3>
+          <p class="why-programming-p">
+            I'm studying programming because it offers opportunities for growth and flexibility, and I'd like to pursue
+            a challenging career in the industry. The ability to code opens up new avenues for problem-solving.
           </p>
           <div class="skills">
             <h3 class="title">Languages</h3>
@@ -177,13 +192,16 @@
               <span>Present</span>
             </h5>
             <p class="job-description">
-              I presently work as a freelance web developer and construct responsive websites using a number of languages such as JavaScript and frameworks such as bootstrap and jquery.
+              I presently work as a freelance web developer and construct responsive websites using a number of
+              languages such as JavaScript and frameworks such as bootstrap and jquery.
             </p>
           </div>
 
           <div class="job">
             <div class="company-title">
-              <h4 class="company"></h4>
+              <h4 class="company">
+                Mango Hosting Kenya
+              </h4>
             </div>
             <h5 class="period">
               <span>2017</span>
@@ -319,7 +337,9 @@
   <section id="contact" class="container section contact">
     <h2>Hire Me</h2>
     <p class="contact-description">
-      I'm currently on the lookout for new chances and am eager to join my next team. I consistently go above and above to ensure that I am providing the finest service possible to my company. My inbox is constantly open. I'll do my best to respond to you, whether you have a question or just want to say hello!
+      I'm currently on the lookout for new chances and am eager to join my next team. I consistently go above and above
+      to ensure that I am providing the finest service possible to my company. My inbox is constantly open. I'll do my
+      best to respond to you, whether you have a question or just want to say hello!
     </p>
     <div class="contact-container">
 

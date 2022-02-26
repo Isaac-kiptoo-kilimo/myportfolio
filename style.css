@@ -60,6 +60,23 @@
     height: 90%;
   }
 
+  .humburger{
+    width: 40px;
+    height: 40px;
+    /* background-color: white; */
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    display: none;
+  }
+
+  .bar{
+    width: 100%;
+    height: 6px;
+    background-color: white;
+  }
+
   .menu-holder{
     height: 100%;
   }
@@ -85,6 +102,7 @@
     color: var(--color);
     font-size: 18px;
   }
+
 
   .download-resume{
     border: 1px solid white;
@@ -137,6 +155,7 @@
 
 .home-image img{
   /* background-color: red; */
+  width: 100%;
 }
 
 .projects{
@@ -199,7 +218,7 @@
   height: 0;
   background-color: rgba(0, 0, 0, 0.9);
   padding: 20px;
-  overflow-y: auto;
+  overflow-y: hidden;
   display: none;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -251,7 +270,9 @@
 .project-description p{
   font-size: 16px;
   line-height: 1.5rem;
-  margin-bottom: 10px;
+  max-height: 4.5rem;
+  overflow: hidden;
+  margin-bottom: 30px;
   white-space: wrap;
 }
 
@@ -263,12 +284,12 @@
   border-radius: 4px;
   outline: none;
   text-transform: capitalize;
-  margin-top: 10px;
+  margin-top: 20px;
   /* display: block; */
 }
 
 .about{
-  padding: var(--padding);
+  /* padding: var(--padding); */
 }
 
 .about-container{

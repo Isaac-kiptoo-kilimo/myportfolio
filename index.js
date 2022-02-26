@@ -20,3 +20,13 @@ for (let i = 0; i < all_projects.length; i++) {
     proj_img_holder.scroll({ behavior: 'smooth', block: 'end', inline: 'center', top: 0 });
   });
 }
+
+// function openCloseMenu() {
+//   if (document.getElementById('menu-holder').classList.contains('open')) {
+//     document.getElementById('menu-holder').classList.remove('open');
+//     document.getElementById('menu-holder').classList.add('close');
+//   } else {
+//     document.getElementById('menu-holder').classList.remove('close');
+//     document.getElementById('menu-holder').classList.add('open');
+//   }
+// }
