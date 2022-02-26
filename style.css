@@ -371,6 +371,16 @@
   box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
 }
 
+@keyframes move-up{
+  0%{
+    transform: translateY(0);
+  }
+  100%{
+    transform: translateY(-20px);
+  }
+}
+
+
 .undertake h5{
   font-size: 30px;
   margin-bottom: 20px;
