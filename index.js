@@ -21,12 +21,12 @@ for (let i = 0; i < all_projects.length; i++) {
   });
 }
 
-// function openCloseMenu() {
-//   if (document.getElementById('menu-holder').classList.contains('open')) {
-//     document.getElementById('menu-holder').classList.remove('open');
-//     document.getElementById('menu-holder').classList.add('close');
-//   } else {
-//     document.getElementById('menu-holder').classList.remove('close');
-//     document.getElementById('menu-holder').classList.add('open');
-//   }
-// }
+function openCloseMenu() {
+  if (document.getElementById('menu-holder').classList.contains('open')) {
+    document.getElementById('menu-holder').classList.remove('open');
+    document.getElementById('menu-holder').classList.add('close');
+  } else {
+    document.getElementById('menu-holder').classList.remove('close');
+    document.getElementById('menu-holder').classList.add('open');
+  }
+}
