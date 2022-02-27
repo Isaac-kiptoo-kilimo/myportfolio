@@ -1,4 +1,4 @@
-# Isaac Kiptoo PORTFOLIO LANDING PAGE
+# ISAAC KIPTOO PORTFOLIO LANDING PAGE
 
 <p>This is a description of my portfolio, 27/02/2022</p>
 
