@@ -62,3 +62,4 @@ project design link:
 
 ## Project Layout
 
+![Design](/images/project-layout.png)
