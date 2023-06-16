@@ -46,9 +46,9 @@
   }
 
   .logo{
-    /* font-size: 1.5rem;
+    font-size: 1.5rem;
     font-weight: bold;
-    color: var(--color); */
+    color: var(--color);
     display: flex;
     align-items: center;
     overflow: hidden;
@@ -288,9 +288,9 @@
   /* display: block; */
 }
 
-.about{
+/* .about{ */
   /* padding: var(--padding); */
-}
+/* } */
 
 .about-container{
   margin-top: 30px;
